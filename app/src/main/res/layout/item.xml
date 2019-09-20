@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="220dp"
     android:layout_margin="5dp"
     card_view:cardElevation="5dp">
 
-    <TextView
-        android:id="@+id/text_view"
-        android:gravity="center"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:text="sample"
-        android:layout_height="match_parent"/>
+        android:background="@drawable/back1"
+        android:layout_height="wrap_content">
 
-</android.support.v7.widget.CardView>
+        <ImageView
+            android:id="@+id/ivchangable1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:layout_height="100dp"
+            android:src="@drawable/sunflower4"
+            android:background="#dadada">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivchangable3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sunflower3"
+            android:background="#dadada">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivChangable"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/sunflower"/>
+
+        <ImageView
+            android:id="@+id/ivChangable2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/sunflower2">
+
+        </ImageView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
